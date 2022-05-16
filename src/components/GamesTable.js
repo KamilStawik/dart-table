@@ -9,7 +9,7 @@ const GamesTable = (props) => {
   };
 
   return (
-    <div style={{ width: "1000px", margin: "auto" }}>
+    <div style={{ width: "1000px", margin: "auto", marginTop: "50px" }}>
 
       <h2 style={{ width: "max-content", margin: "auto" }}> {props.title}</h2>
 

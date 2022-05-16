@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     body {
         margin: 0;
-        background-color: gray;
+        background-color: whitesmoke;
         font-family: "Inter", sans-serif;
         word-break: break-word;
         -webkit-font-smoothing: antialiased;

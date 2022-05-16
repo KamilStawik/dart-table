@@ -7,7 +7,7 @@ const PlayersTable = (props) => {
   return (
     <div style={{ width: "1000px", margin: "auto" }}>
 
-      <h2 style={{ width: "max-content", margin: "auto" }}> {props.title}</h2>
+      <h2 style={{ width: "max-content", margin: "auto", marginTop: "50px"}}> {props.title}</h2>
 
       <table style={{ width: "1000px" }}>
         <tbody>
