@@ -8,7 +8,6 @@ const MainPage = () => (
 
     <PlayersTable title="Gracze" />
     <GamesTable title="Terminarz"/>
-    
 
     {/* <PlayersTable
       title={"Terminarz"}

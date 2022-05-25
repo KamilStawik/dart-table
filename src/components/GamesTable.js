@@ -1,5 +1,5 @@
 import players from "../content/players";
-import gamesCalendar from "../content/gamesCalendar";
+import matchHistory from "../content/matchHistory";
 
 const GamesTable = (props) => {
   const tableColumnsNumber = 4;
@@ -21,12 +21,12 @@ const GamesTable = (props) => {
             <th style={{ width: `${1000 / tableColumnsNumber}px` }}> Gracz 2</th>
             <th style={{ width: `${1000 / tableColumnsNumber}px` }}> Wynik</th>
           </tr>
-          {gamesCalendar.map((game) => (
+          {matchHistory.map((game) => (
             <tr key={game.id}>
               <td style={{ width: `${1000 / tableColumnsNumber}px`, textAlign: "center" }}> {`${game.date} ${game.time}`} </td>
               <td style={{ width: `${1000 / tableColumnsNumber}px`, textAlign: "center" }}> {getPlayerNick(game.player1Id)} </td>
               <td style={{ width: `${1000 / tableColumnsNumber}px`, textAlign: "center" }}> {getPlayerNick(game.player2Id)} </td>
-              <td style={{ width: `${1000 / tableColumnsNumber}px`, textAlign: "center" }}> {game.result}</td>
+              <td style={{ width: `${1000 / tableColumnsNumber}px`, textAlign: "center" }}> {game.result1} / {game.result2}</td>
             </tr>
           ))}
         </tbody>
